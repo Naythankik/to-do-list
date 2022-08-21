@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-child">
+        <div class="top-container">
+          <h1>TODO</h1>
+          <button type="submit" id="mode">
+            <img src="./images/icon-moon.svg" alt="dark" />
+          </button>
+        </div>
+        <div class="todo-input">
+          <form action="#" method="get">
+            <label for="checkbox" id="checkbox">
+              <input type="checkbox" name="checker" />
+              <span class="checkmark"></span>
+            </label>
+            <input
+              type="text"
+              name="todo"
+              id="todo"
+              placeholder="Create a new todo..."
+            />
+          </form>
+        </div>
+        <div class="todo-list">
+          <label>
+            <input
+              type="checkbox"
+              onclick="markAsRead(this.nextElementSibling.nextElementSibling)"
+            />
+            <span class="checkmark"></span>
+            <p class="todo-records no-underline">
+              Complete online javaScript courses
+            </p>
+            <button type="submit">
+              <img src="./images/icon-cross.svg" alt="cross" />
+            </button>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              onclick="markAsRead(this.nextElementSibling.nextElementSibling)"
+            />
+            <span class="checkmark"></span>
+            <p class="todo-records no-underline">Jog around the park 3x</p>
+            <button type="submit">
+              <img src="./images/icon-cross.svg" alt="cross" />
+            </button>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              onclick="markAsRead(this.nextElementSibling.nextElementSibling)"
+            />
+            <span class="checkmark"></span>
+            <p class="todo-records no-underline">10 minutes meditation</p>
+            <button type="submit">
+              <img src="./images/icon-cross.svg" alt="cross" />
+            </button>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              onclick="markAsRead(this.nextElementSibling.nextElementSibling)"
+            />
+            <span class="checkmark"></span>
+            <p class="todo-records no-underline">Read for 1 hour</p>
+            <button type="submit">
+              <img src="./images/icon-cross.svg" alt="cross" />
+            </button>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              onclick="markAsRead(this.nextElementSibling.nextElementSibling)"
+            />
+            <span class="checkmark"></span>
+            <p class="todo-records no-underline">Pick up groceries</p>
+            <button type="submit">
+              <img src="./images/icon-cross.svg" alt="cross" />
+            </button>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              onclick="markAsRead(this.nextElementSibling.nextElementSibling)"
+            />
+            <span class="checkmark"></span>
+            <p class="todo-records no-underline">
+              Complete Todo App on Frontend Mentor
+            </p>
+            <button type="submit">
+              <img src="./images/icon-cross.svg" alt="cross" />
+            </button>
+          </label>
+          <div class="bottom-menu">
+            <p>5 items left</p>
+            <div class="in-menu">
+              <a href="#">All</a>
+              <a href="#">Active</a>
+              <a href="#">Completed</a>
+            </div>
+            <p>Clear Completed</p>
+          </div>
+        </div>
+        <div class="outer in-menu">
+          <a href="#">All</a>
+          <a href="#">Active</a>
+          <a href="#">Completed</a>
+        </div>
+        <p id="nota-by">Drag and drop to reorder list</p>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
